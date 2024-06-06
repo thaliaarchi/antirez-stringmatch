@@ -1,12 +1,13 @@
-# Glob matcher from Redis
+# Jim/Redis Tcl-style glob matcher
 
 This is the glob-style string matcher `stringmatch` from [Redis](https://github.com/redis/redis)
-and its FOSS fork [Valkey](https://github.com/valkey-io/valkey), extracted as a
-library.
+and [Jim](https://github.com/msteveb/jimtcl), extracted as a library.
 
-It maintains the relevant subset of the Git revision history in parallel to both
-projects. The changes since the Redis license change are tracked in the `redis`
-and `valkey` branches, respectively.
+The relevant subsets of the Git revision histories for Redis, forks [Valkey](https://github.com/valkey-io/valkey)
+and [KeyDB](https://github.com/Snapchat/KeyDB), Jim, and old projects by
+antirez, [Visitors](https://github.com/antirez/visitors), [Strabo](https://github.com/antirez/strabo),
+and [Disque](https://github.com/antirez/disque) are maintained in separate Git
+branches.
 
 Of particular note, it was vulnerable to a denial-of-service from pathological
 patterns that caused exponential time complexity, until it was reported in
